@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Currency Converter</string>
+    <string name="my_balances">My Balances</string>
+    <string name="currency_exchange">Currency exchange</string>
+    <string name="submit">Submit</string>
+    <string name="sell">Sell</string>
+    <string name="receive">Receive</string>
+    <string name="eur" translatable="false">EUR</string>
+    <string name="usd" translatable="false">USD</string>
+    <string name="bgn" translatable="false">BGN</string>
+    <string name="exchange_rate_not_available">Exchange rate is not available</string>
+    <string name="empty_sell_amount">Sell amount is empty</string>
+    <string name="incorrect_selected_currency">Sell, receive currencies should be differ</string>
+    <string name="network_not_available">You are connected to the internet, please check network connection</string>
+    <string name="balance_below_zero">Balance should not be below zero</string>
+    <string name="currency_convert_header">Currency converted</string>
+    <string name="currency_convert_success">Currency have converted. %1$s to %2$s, Commission Fee - %3$s</string>
+    <string name="currency_convert_success_commission_free">Currency have converted. %1$s to %2$s</string>
+    <string name="done">Done</string>
+    <string-array name="currencies">
+        <item>@string/eur</item>
+        <item>@string/usd</item>
+        <item>@string/bgn</item>
+    </string-array>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_top">24dp</dimen>
+    <dimen name="margin_top_medium">32dp</dimen>
+    <dimen name="margin_top_large">64dp</dimen>
+    <dimen name="margin_bottom_large">64dp</dimen>
+    <dimen name="margin_start">12dp</dimen>
+    <dimen name="margin_end">12dp</dimen>
+    <dimen name="item_size">48dp</dimen>
+    <dimen name="edit_text_item_size">64dp</dimen>
+</resources>

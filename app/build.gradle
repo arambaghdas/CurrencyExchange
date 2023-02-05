@@ -1,0 +1,71 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+}
+
+android {
+    namespace 'com.currency.exchange'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.currency.exchange"
+        minSdk 26
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_9
+        targetCompatibility JavaVersion.VERSION_1_9
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    viewBinding {
+        enabled = true
+    }
+    testOptions {
+        unitTests {
+            includeAndroidResources = true
+        }
+        packagingOptions {
+            jniLibs {
+                useLegacyPackaging true
+            }
+        }
+    }
+}
+
+dependencies {
+    implementation UiDep.core
+    implementation UiDep.appcompat
+    implementation UiDep.material
+    implementation UiDep.constraint_layout
+    implementation UiDep.lifecycle_viewmodel
+
+    implementation NetworkDep.retrofit2
+    implementation NetworkDep.retrofit2_gson
+    implementation NetworkDep.okhttp3
+
+    implementation UtilDep.coroutines
+    implementation UtilDep.coroutines_core
+    implementation UtilDep.datastore_preferences
+    implementation UtilDep.koin
+
+    testImplementation TestDep.junit
+    testImplementation TestDep.test_core
+    androidTestImplementation TestDep.ext_junit
+    androidTestImplementation TestDep.espresso_core
+    androidTestImplementation TestDep.mockk_android
+    androidTestImplementation TestDep.kotlinx_coroutines
+    androidTestImplementation TestDep.turbine
+}
